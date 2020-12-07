@@ -5,8 +5,7 @@ import Form from "./components/Form/Form";
 
 const initialStateItems = [
   {
-    image:
-      "https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png",
+    image: "https://miro.medium.com/max/3150/1*xxVEfOOAmIKHWOUloRKLhw.jpeg",
     name: "Dan Abramov",
     twitterLink: "https://twitter.com/dan_abramov",
   },
@@ -40,7 +39,24 @@ class App extends Component {
 
   addItem = (e) => {
     e.preventDefault();
+
+    const newItem = {
+      name: e.target[0].value,
+      twitterLink: e.target[1].value,
+      image: e.target[2].value,
+      description: e.target[3].value,
+    };
+
+    this.setState((prevState) => ({
+      items: [...prevState.items, newItem],
+    }));
+
+    e.target.reset();
+
     console.log(e.target[0].name);
+    console.log(e.target[1].name);
+    console.log(e.target[2].name);
+    console.log(e.target[3].name);
   };
 
   render() {

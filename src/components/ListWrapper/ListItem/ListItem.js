@@ -10,7 +10,12 @@ const ListItem = ({ name, description, image, twitterLink }) => {
       <div>
         <h2 className="listItem__name">{name}</h2>
         <p className="listItem__description">{description}</p>
-        <a href={twitterLink} className="listItem__button">
+        <a
+          href={twitterLink}
+          target="_blank"
+          rel="noreferrer"
+          className="listItem__button"
+        >
           visit twitter page
         </a>
       </div>
