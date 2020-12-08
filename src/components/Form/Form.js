@@ -6,13 +6,17 @@ const Form = ({ submitFn }) => {
     <>
       <div className={styles.form__wrapper}>
         <h2>Add new twitter account</h2>
-        <form className={styles.form__form} onSubmit={submitFn}>
+        <form
+          autoComplete="off"
+          className={styles.form__form}
+          onSubmit={submitFn}
+        >
           <div className={styles.form__item}>
-            <input name="text" placeholder="name" id="name" />
+            <input name="text" placeholder="name" id="name" required />
             <label htmlFor="name"></label>
           </div>
           <div className={styles.form__item}>
-            <input name="link" placeholder="link" id="link" />
+            <input name="link" placeholder="link" id="link" required />
             <label htmlFor="link"></label>
           </div>
           <div className={styles.form__item}>
@@ -20,7 +24,7 @@ const Form = ({ submitFn }) => {
             <label htmlFor="image"></label>
           </div>
           <div className={styles.form__item}>
-            <textarea placeholder="description" id="description" />
+            <textarea placeholder="description" id="description" required />
           </div>
           <button type="submit" className={styles.form__submit}>
             add new item
