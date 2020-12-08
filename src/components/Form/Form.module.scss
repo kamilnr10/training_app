@@ -18,41 +18,41 @@ align-items: center;
         //     border: none;
         //     border-bottom: 2px solid #ccc;
         // }
-        .form__item  {
-            input {
-            width: 330px;
-            height: 30px;
-            margin-top: 10px;
-            border: none;
-            border-bottom: 2px solid #ccc;
-            }
-            textarea {
-                width: 350px;
-                height: 100px;
-                margin: 10px 0;
-                border: none;
-                border-bottom: 2px solid #ccc;
-            }
-        }
+        // .form__item  {
+        //     input {
+        //     width: 330px;
+        //     height: 30px;
+        //     margin-top: 10px;
+        //     border: none;
+        //     border-bottom: 2px solid #ccc;
+        //     }
+        //     textarea {
+        //         width: 350px;
+        //         height: 100px;
+        //         margin: 10px 0;
+        //         border: none;
+        //         border-bottom: 2px solid #ccc;
+        //     }
+        // }
        
 
 
-        .form__submit {
-            font-size: 10px;
-            color: #1E58FF;
-            text-decoration: none;
-            margin: 15px 0 15px 0;
-            padding: 7px 12px;
-            font-weight: 500;
-            background: none;
-            border: 2px solid #1E58FF;
-            cursor: pointer;
-            transition: .3s;
-        }
-        .form__submit:hover {
-            background-color: #1E58FF;
-            color: white;
-        }
+        // .form__submit {
+        //     font-size: 10px;
+        //     color: #1E58FF;
+        //     text-decoration: none;
+        //     margin: 15px 0 15px 0;
+        //     padding: 7px 12px;
+        //     font-weight: 500;
+        //     background: none;
+        //     border: 2px solid #1E58FF;
+        //     cursor: pointer;
+        //     transition: .3s;
+        // }
+        // .form__submit:hover {
+        //     background-color: #1E58FF;
+        //     color: white;
+        // }
     }
 }
 
@@ -73,20 +73,20 @@ align-items: center;
 //     border-bottom: 2px solid #ccc;
 // }
 
-// .form__submit {
-//     font-size: 10px;
-//     color: #1E58FF;
-//     text-decoration: none;
-//     margin: 15px 0 15px 0;
-//     padding: 7px 12px;
-//     font-weight: 500;
-//     background: none;
-//     border: 2px solid #1E58FF;
-//     cursor: pointer;
-//     transition: .3s;
-// }
+.form__submit {
+    font-size: 10px;
+    color: #1E58FF;
+    text-decoration: none;
+    margin: 15px 0 15px 0;
+    padding: 7px 12px;
+    font-weight: 500;
+    background: none;
+    border: 2px solid #1E58FF;
+    cursor: pointer;
+    transition: .3s;
+}
 
-// .form__submit:hover {
-//     background-color: #1E58FF;
-//     color: white;
-// }
+.form__submit:hover {
+    background-color: #1E58FF;
+    color: white;
+}

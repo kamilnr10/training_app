@@ -1,4 +1,5 @@
 import React from "react";
+import Input from "../Input/Input";
 import styles from "./Form.module.scss";
 
 const Form = ({ submitFn }) => {
@@ -11,7 +12,11 @@ const Form = ({ submitFn }) => {
           className={styles.form__form}
           onSubmit={submitFn}
         >
-          <div className={styles.form__item}>
+          <Input name="name" label="name" maxLength={30} />
+          <Input name="link" label="Twitter Link" />
+          <Input name="image" label="Image" />
+          <Input tag="textarea" name="description" label="Description" />
+          {/* <div className={styles.form__item}>
             <input name="text" placeholder="name" id="name" required />
             <label htmlFor="name"></label>
           </div>
@@ -25,7 +30,7 @@ const Form = ({ submitFn }) => {
           </div>
           <div className={styles.form__item}>
             <textarea placeholder="description" id="description" required />
-          </div>
+          </div> */}
           <button type="submit" className={styles.form__submit}>
             add new item
           </button>
