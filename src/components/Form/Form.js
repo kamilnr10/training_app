@@ -1,12 +1,14 @@
 import React from "react";
 import Input from "../Input/Input";
 import styles from "./Form.module.scss";
+import Button from "../Button/Button";
+import Title from "../Title/Title";
 
 const Form = ({ submitFn }) => {
   return (
     <>
       <div className={styles.form__wrapper}>
-        <h2>Add new twitter account</h2>
+        <Title>Add new twitter account</Title>
         <form
           autoComplete="off"
           className={styles.form__form}
@@ -31,9 +33,10 @@ const Form = ({ submitFn }) => {
           <div className={styles.form__item}>
             <textarea placeholder="description" id="description" required />
           </div> */}
-          <button type="submit" className={styles.form__submit}>
+          <Button>add new item</Button>
+          {/* <button type="submit" className={styles.form__submit}>
             add new item
-          </button>
+          </button> */}
         </form>
       </div>
     </>

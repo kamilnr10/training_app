@@ -1,28 +1,12 @@
-import "./index.css";
 import React, { Component } from "react";
-import ListWrapper from "./components/ListWrapper/ListWrapper";
-import Form from "./components/Form/Form";
+import ListWrapper from "../../components/ListWrapper/ListWrapper";
+import Form from "../../components/Form/Form";
+import TwitterView from "../TwitterView/TwitterView";
+import ArticlesView from "../ArticlesView/ArticlesView";
+import NotesView from "../NotesView/NotesView";
+import "./index.css";
 
 const initialStateItems = [
-  {
-    image: "https://miro.medium.com/max/3150/1*xxVEfOOAmIKHWOUloRKLhw.jpeg",
-    name: "Dan Abramov",
-    twitterLink: "https://twitter.com/dan_abramov",
-  },
-  {
-    image:
-      "https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png",
-    name: "Ryan Florence",
-    description: "He is a guru in fronent world",
-    twitterLink: "https://twitter.com/ryan_florence",
-  },
-  {
-    image:
-      "https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png",
-    name: "Michael Jackson",
-    description: "Very helpfull guy. He is a React library teacher",
-    twitterLink: "https://twitter.com/michael_jackson",
-  },
   {
     image:
       "https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png",
@@ -32,7 +16,7 @@ const initialStateItems = [
   },
 ];
 
-class App extends Component {
+class Root extends Component {
   state = {
     items: [...initialStateItems],
   };
@@ -69,4 +53,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Root;

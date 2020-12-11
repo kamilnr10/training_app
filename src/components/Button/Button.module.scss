@@ -1,0 +1,17 @@
+.form__submit {
+    font-size: 10px;
+    color: #1E58FF;
+    text-decoration: none;
+    margin: 15px 0 15px 0;
+    padding: 7px 12px;
+    font-weight: 500;
+    background: none;
+    border: 2px solid #1E58FF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form__submit:hover {
+    background-color: #1E58FF;
+    color: white;
+}
