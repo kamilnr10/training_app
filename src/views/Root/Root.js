@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ListWrapper from "../../components/ListWrapper/ListWrapper";
 import Form from "../../components/Form/Form";
 import TwitterView from "../TwitterView/TwitterView";
 import ArticlesView from "../ArticlesView/ArticlesView";
 import NotesView from "../NotesView/NotesView";
-import "./index.css";
+import Header from "../../components/Header/Header";
+import Modal from "../../components/Modal/Modal";
+import "../../index.css";
 
 const initialStateItems = [
   {
@@ -37,18 +40,28 @@ class Root extends Component {
 
     e.target.reset();
 
-    console.log(e.target[0].name);
-    console.log(e.target[1].name);
-    console.log(e.target[2].name);
-    console.log(e.target[3].name);
+    // console.log(e.target[0].name);
+    // console.log(e.target[1].name);
+    // console.log(e.target[2].name);
+    // console.log(e.target[3].name);
   };
 
   render() {
     return (
-      <div className="App">
-        <ListWrapper items={this.state.items} />
-        <Form submitFn={this.addItem} />
-      </div>
+      <BrowserRouter>
+        <>
+          <Header />
+          <h1>hello world</h1>
+          <Switch>
+            {/* <ListWrapper items={this.state.items} />
+        <Form submitFn={this.addItem} /> */}
+            <Route exact path="/" component={TwitterView} />
+            <Route path="/articles" component={ArticlesView} />
+            <Route path="/notes" component={NotesView} />
+          </Switch>
+          <Modal />
+        </>
+      </BrowserRouter>
     );
   }
 }

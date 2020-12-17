@@ -18,25 +18,7 @@ const Form = ({ submitFn }) => {
           <Input name="link" label="Twitter Link" />
           <Input name="image" label="Image" />
           <Input tag="textarea" name="description" label="Description" />
-          {/* <div className={styles.form__item}>
-            <input name="text" placeholder="name" id="name" required />
-            <label htmlFor="name"></label>
-          </div>
-          <div className={styles.form__item}>
-            <input name="link" placeholder="link" id="link" required />
-            <label htmlFor="link"></label>
-          </div>
-          <div className={styles.form__item}>
-            <input name="image" placeholder="image" id="image" />
-            <label htmlFor="image"></label>
-          </div>
-          <div className={styles.form__item}>
-            <textarea placeholder="description" id="description" required />
-          </div> */}
           <Button>add new item</Button>
-          {/* <button type="submit" className={styles.form__submit}>
-            add new item
-          </button> */}
         </form>
       </div>
     </>
