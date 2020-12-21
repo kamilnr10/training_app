@@ -22,6 +22,7 @@ const initialStateItems = [
 class Root extends Component {
   state = {
     items: [...initialStateItems],
+    isModalOpen: true,
   };
 
   addItem = (e) => {
@@ -39,18 +40,28 @@ class Root extends Component {
     }));
 
     e.target.reset();
+  };
 
-    // console.log(e.target[0].name);
-    // console.log(e.target[1].name);
-    // console.log(e.target[2].name);
-    // console.log(e.target[3].name);
+  openModal = () => {
+    console.log("klik");
+    this.setState({
+      isModalOpen: true,
+    });
+  };
+
+  closeModal = () => {
+    console.log("klik");
+    this.setState({
+      isModalOpen: false,
+    });
   };
 
   render() {
+    const { isModalOpen } = this.state;
     return (
       <BrowserRouter>
         <>
-          <Header />
+          <Header openModalFn={this.openModal} />
           <h1>hello world</h1>
           <Switch>
             {/* <ListWrapper items={this.state.items} />
@@ -59,7 +70,7 @@ class Root extends Component {
             <Route path="/articles" component={ArticlesView} />
             <Route path="/notes" component={NotesView} />
           </Switch>
-          <Modal />
+          {isModalOpen && <Modal closeModalFn={this.closeModal} />}
         </>
       </BrowserRouter>
     );

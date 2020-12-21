@@ -7,7 +7,8 @@ align-items: center;
 
 
     h2 {
-    color: #1E58FF;
+        text-align: center;
+        color: #1E58FF;
     }
 
     .form__form {
@@ -56,6 +57,17 @@ align-items: center;
         //     background-color: #1E58FF;
         //     color: white;
         // }
+
+        .form__radio__btn__wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            input {
+                margin: 0 10px 0 15px;
+            }
+        }
     }
 }
 
@@ -75,6 +87,7 @@ align-items: center;
 //     border: none;
 //     border-bottom: 2px solid #ccc;
 // }
+
 
 .form__submit {
     font-size: 10px;
